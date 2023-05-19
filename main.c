@@ -17,6 +17,7 @@ int main(int argc, char *argv[])
 		SDL_DestroyWindow(pWin);
 	}
 	SDL_Log("End\n");
+	SDL_Log("5555\n");
 	SDL_Quit();
 	return 0;
 }
