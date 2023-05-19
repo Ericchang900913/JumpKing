@@ -4,6 +4,7 @@
 #include <SDL2/SDL_mixer.h>
 #include <SDL2/SDL_ttf.h>
 #include <stdio.h>
+#include "test.h"
 
 int main(int argc, char *argv[])
 {
@@ -11,13 +12,13 @@ int main(int argc, char *argv[])
 	SDL_Init(SDL_INIT_EVERYTHING);
 	SDL_Log("Starting\n");
 
-	SDL_Delay(5000);
+	SDL_Delay(3000);
 	if (pWin)
 	{
 		SDL_DestroyWindow(pWin);
 	}
 	SDL_Log("End\n");
-	SDL_Log("5555\n");
+	TTEST();
 	SDL_Quit();
 	return 0;
 }
